@@ -1,0 +1,25 @@
+{
+    "name": "axiom",
+    "displayName": "axiom",
+    "description": "Syntax for playing aroung with axiomatic logical systems",
+    "version": "0.0.1",
+    "engines": {
+        "vscode": "^1.38.0"
+    },
+    "categories": [
+        "Programming Languages"
+    ],
+    "contributes": {
+        "languages": [{
+            "id": "axm",
+            "aliases": ["Axiom", "axm"],
+            "extensions": [".axm"],
+            "configuration": "./language-configuration.json"
+        }],
+        "grammars": [{
+            "language": "axm",
+            "scopeName": "source.axm",
+            "path": "./syntaxes/axm.tmLanguage.json"
+        }]
+    }
+}

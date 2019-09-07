@@ -1,0 +1,32 @@
+{
+	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+	"name": "Axiom",
+	"patterns": [
+		{
+			"include": "#keywords"
+		},
+		{
+			"include": "#strings"
+		}
+	],
+	"repository": {
+		"keywords": {
+			"patterns": [{
+				"name": "keyword.control.axm",
+				"match": "\\b(Demonstrate|by|with|return)\\b"
+			}]
+		},
+		"strings": {
+			"name": "string.quoted.double.axm",
+			"begin": "\"",
+			"end": "\"",
+			"patterns": [
+				{
+					"name": "constant.character.escape.axm",
+					"match": "\\\\."
+				}
+			]
+		}
+	},
+	"scopeName": "source.axm"
+}
