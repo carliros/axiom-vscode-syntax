@@ -13,7 +13,7 @@
 		"keywords": {
 			"patterns": [{
 				"name": "keyword.control.axm",
-				"match": "\\b(Demonstrate|by|with|return)\\b"
+				"match": "\\b(Demonstrate|by|with)\\b"
 			}]
 		},
 		"strings": {
